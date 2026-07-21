@@ -1,12 +1,13 @@
 {
   "name": "re-funnycode-proxy-server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start -H 0.0.0.0",
+    "preview": "serve out -l tcp://0.0.0.0:3000",
     "lint": "node scripts/check-eslint-disable.js && eslint .",
     "type-check": "tsc --noEmit"
   },
@@ -25,6 +26,7 @@
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
+    "serve": "^14.2.6",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
