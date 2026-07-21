@@ -1,4 +1,4 @@
-import blogsJson from '@/data/blogs.json';
+import blogsJson from './data/blogs.json';
 import type { Blog, BlogList } from './types';
 
 // @export
@@ -11,7 +11,7 @@ const blogs = (blogsJson as BlogList).data;
 
 // @export
 export function getBlogSummaries(): BlogSummary[] {
-  return blogs.map(({ content: _content, ...blog }) => blog);
+  return blogs.map(({ content: _, ...blog }) => blog);
 }
 
 // @export
