@@ -1,4 +1,6 @@
 import { NextResponse } from 'next/server';
+import type { APIResponse } from '@/types/api';
+import type { Blog } from '@/features/blogs/types';
 import { getBlogBySlug, getBlogStaticParams } from '@/features/blogs/helpers';
 
 type BlogRouteContext = {
@@ -11,10 +13,25 @@ export async function GET(_request: Request, { params }: BlogRouteContext) {
   const blog = getBlogBySlug(slug);
 
   if (!blog) {
-    return NextResponse.json({ message: 'Không tìm thấy bài viết.' }, { status: 404 });
+    const responseError: APIResponse<unknown> = {
+      success: false,
+      messageDTO: {
+        code: 'M003',
+        message: 'Không tìm thấy bài viết.',
+      },
+    };
+    return NextResponse.json(responseError, { status: 404 });
   }
 
-  return NextResponse.json(blog);
+  const responseBlog: APIResponse<Blog> = {
+    success: true,
+    messageDTO: {
+      code: 'M001',
+      message: 'Success',
+    },
+    result: blog,
+  };
+  return NextResponse.json(responseBlog);
 }
 
 // @export
