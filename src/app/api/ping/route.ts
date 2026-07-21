@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 
+// @export
 export function GET() {
   return NextResponse.json({
     message: 'pong',
@@ -7,4 +8,5 @@ export function GET() {
   });
 }
 
+// @export
 export const dynamic = 'force-static';
