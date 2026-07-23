@@ -9,4 +9,4 @@ export function GET() {
 }
 
 // @export
-export const dynamic = 'force-static';
+export const dynamic = 'force-dynamic';
