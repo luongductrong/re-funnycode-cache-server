@@ -2,7 +2,7 @@ import { searchBlogs } from '@/features/blogs/helpers';
 import { NextRequest, NextResponse } from 'next/server';
 import type { APIResponse, Pagination } from '@/types/api';
 import type { BlogSummary } from '@/features/blogs/helpers';
-import { blogsSearchParamsSchema } from '@/features/blogs/schemas';
+import { BLOGS_SEARCH_NETLIFY_VARY, blogsSearchParamsSchema } from '@/features/blogs/schemas';
 
 // @export
 export function GET(request: NextRequest) {
@@ -29,8 +29,9 @@ export function GET(request: NextRequest) {
 
   return NextResponse.json(responseBlogs, {
     headers: {
-      'Cache-Control': 'public, max-age=86400, stale-while-revalidate=604800',
+      'Cache-Control': 'public, max-age=0, must-revalidate',
       'Netlify-CDN-Cache-Control': 'public, max-age=86400, stale-while-revalidate=604800, durable',
+      'Netlify-Vary': BLOGS_SEARCH_NETLIFY_VARY,
     }, // 1 day fresh + 7 days stale
   });
 }

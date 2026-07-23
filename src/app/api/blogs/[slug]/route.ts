@@ -2,7 +2,7 @@ import type { APIResponse } from '@/types/api';
 import { NextRequest, NextResponse } from 'next/server';
 import { getBlogBySlug } from '@/features/blogs/helpers';
 import type { BlogDetail } from '@/features/blogs/helpers';
-import { blogDetailOptionsSchema } from '@/features/blogs/schemas';
+import { BLOG_DETAIL_NETLIFY_VARY, blogDetailOptionsSchema } from '@/features/blogs/schemas';
 
 type BlogRouteContext = {
   params: Promise<{ slug: string }>;
@@ -46,8 +46,9 @@ export async function GET(request: NextRequest, { params }: BlogRouteContext) {
   };
   return NextResponse.json(responseBlog, {
     headers: {
-      'Cache-Control': 'public, max-age=604800, stale-while-revalidate=604800',
+      'Cache-Control': 'public, max-age=0, must-revalidate',
       'Netlify-CDN-Cache-Control': 'public, max-age=604800, stale-while-revalidate=604800, durable',
+      'Netlify-Vary': BLOG_DETAIL_NETLIFY_VARY,
     }, // 7 days fresh + 7 days stale
   });
 }

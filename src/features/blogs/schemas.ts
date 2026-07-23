@@ -17,6 +17,9 @@ export const blogsSearchParamsSchema = z.object({
 });
 
 // @export
+export const BLOGS_SEARCH_NETLIFY_VARY = `query=${Object.keys(blogsSearchParamsSchema.shape).join('|')}`;
+
+// @export
 export type BlogsSearchParams = z.infer<typeof blogsSearchParamsSchema>;
 
 // @export
@@ -24,6 +27,9 @@ export const blogDetailOptionsSchema = z.object({
   preview: z.stringbool().default(false),
   content: z.stringbool().default(true),
 });
+
+// @export
+export const BLOG_DETAIL_NETLIFY_VARY = `query=${Object.keys(blogDetailOptionsSchema.shape).join('|')}`;
 
 // @export
 export type BlogDetailOptions = z.infer<typeof blogDetailOptionsSchema>;
