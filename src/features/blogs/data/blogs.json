@@ -209,6 +209,20 @@
       "fullname": "FTES ADMIN",
       "categoryName": "Thông báo",
       "slugName": "thong-bao-quan-trong-ve-he-thong-website"
+    },
+    {
+      "id": "b6f3c27f-cf69-4e02-8b86-77669eaa4c7a",
+      "createdAt": "2025-01-20T20:24:57.280+00:00",
+      "title": "PHẠM MINH HOÀNG - NHÀ VÔ ĐỊCH \"KHAI XUÂN CHIẾN CỐT - FUNNYCODE 2025\"",
+      "preview": "Dịp lễ Tết Nguyên Đáng vừa qua, cuộc thi Khai Xuân Chiến Cốt 2025 là cuộc thi được FunnyCode tổ chức với mục đích cùng tạo nên sân chơi lập trình ý nghĩa cho các bạn đam mê giải thuật. Trải qua 120 phút thi đấu đầy căng thẳng, thí sinh Phạm Minh Hoàng xuất sắc trở thành tân vương cho cuộc thi năm nay của FunnyCode.",
+      "content": "<p>Dịp lễ Tết Nguyên Đáng vừa qua, cuộc thi Khai Xuân Chiến Cốt 2025 là cuộc thi được FunnyCode tổ chức với mục đích cùng tạo nên sân chơi lập trình ý nghĩa cho các bạn đam mê giải thuật.</p><p>Trải qua 120 phút thi đấu đầy căng thẳng, thí sinh Phạm Minh Hoàng xuất sắc trở thành tân vương cho cuộc thi năm nay của FunnyCode.</p><p>Xin được vinh danh Phạm Minh Hoàng, người đã xuất sắc vượt qua hàng trăm đối thủ và chạm tới vị trí cao nhất của cuộc thi Khai Xuân Chiến Cốt - FunnyCode 2025!</p><p><img src=\"https://cdn.jsdelivr.net/gh/ftesedu/funnycode-images-1755118228915@main/images/474223711_122113588718658206_5152656122262460606_n (1).jpg_1755119474147.jpg\" alt=\"Phạm Minh Hoàng\"></p><p>Với khả năng phân tích sắc bén, kỹ năng lập trình vượt trội và sự tập trung tuyệt đối trong suốt cuộc thi, Minh Hoàng đã vượt qua mọi thử thách một cách ngoạn mục và đạt được chiến thắng đầy thuyết phục.</p><p>Với thành tích đáng kinh ngạc: Giải Nhất với số điểm tuyệt đối: 150/150</p><p>Hoàng ẳm về cho mình phần thưởng: 700.000 VNĐ tiền mặt + Voucher Free Full Khóa Học FunnyCode kỳ SU25</p><p>Đây không chỉ là một chiến thắng cá nhân mà còn là minh chứng cho khả năng và nỗ lực phi thường của Minh Hoàng trong hành trình chinh phục đam mê lập trình.</p><p>Với thành công vang dội này, Minh Hoàng đã khẳng định mình là một lập trình viên xuất sắc, tạo cảm hứng lớn cho cộng đồng FunnyCode.</p><p>Một lần nữa, chúc mừng bạn với chiến thắng đầy thuyết phục! Hãy tiếp tục giữ vững phong độ và chinh phục thêm nhiều thử thách mới trong tương lai!</p><p>FunnyCode tự hào về bạn!</p>",
+      "image": "https://cdn.jsdelivr.net/gh/ftesedu/funnycode-images-1755118228915@main/images/474223711_122113588718658206_5152656122262460606_n (1).jpg_1755119474147.jpg",
+      "emojis": 0,
+      "view": true,
+      "userName": "admin-system@funnycode.vn",
+      "fullname": "FTES ADMIN",
+      "categoryName": "Vinh danh",
+      "slugName": "pham-minh-hoang---nha-vo-dich-khai-xuan-chien-cot---funnycode-2025"
     }
   ]
 }
