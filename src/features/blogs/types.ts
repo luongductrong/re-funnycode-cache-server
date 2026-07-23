@@ -16,6 +16,11 @@ export type BlogList = {
   data: Blog[];
 };
 
+export type BlogDetailOptions = {
+  preview: boolean;
+  content: boolean;
+};
+
 export const BLOG_SORT_FIELDS = [
   'id',
   'createdAt',

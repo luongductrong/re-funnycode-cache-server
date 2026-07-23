@@ -15,3 +15,15 @@ export const blogsSearchParamsSchema = z.object({
   title: optionalFilterSchema,
   category: optionalFilterSchema,
 });
+
+// @export
+export type BlogsSearchParams = z.infer<typeof blogsSearchParamsSchema>;
+
+// @export
+export const blogDetailOptionsSchema = z.object({
+  preview: z.stringbool().default(false),
+  content: z.stringbool().default(true),
+});
+
+// @export
+export type BlogDetailOptions = z.infer<typeof blogDetailOptionsSchema>;
