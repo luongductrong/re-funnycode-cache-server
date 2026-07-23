@@ -1,35 +1,39 @@
-import { NextResponse } from 'next/server';
-import type { Blog } from '@/features/blogs/types';
+import { searchBlogs } from '@/features/blogs/helpers';
+import { NextRequest, NextResponse } from 'next/server';
 import type { APIResponse, Pagination } from '@/types/api';
-import { getBlogSummaries } from '@/features/blogs/helpers';
+import type { BlogSummary } from '@/features/blogs/helpers';
+import { blogsSearchParamsSchema } from '@/features/blogs/schemas';
 
 // @export
-export function GET() {
-  const blogs = getBlogSummaries();
+export function GET(request: NextRequest) {
+  const filters = blogsSearchParamsSchema.safeParse(Object.fromEntries(request.nextUrl.searchParams));
 
-  const responseBlogs: APIResponse<Pagination<Blog>> = {
+  if (!filters.success) {
+    return NextResponse.json(
+      {
+        success: false,
+        messageDTO: { code: 'M008', message: 'Tham số tìm kiếm không hợp lệ.' },
+      } satisfies APIResponse<unknown>,
+      { status: 400 },
+    );
+  }
+
+  const responseBlogs: APIResponse<Pagination<BlogSummary>> = {
     success: true,
     messageDTO: {
       code: 'M001',
       message: 'Success',
     },
-    result: {
-      paging: {
-        currentPage: 1,
-        pageSize: blogs.length,
-        sort: {
-          sortField: 'createdAt',
-          sortOrder: 'DESC',
-        },
-      },
-      totalElements: blogs.length,
-      totalPages: 1,
-      data: blogs,
-    },
+    result: searchBlogs(filters.data),
   };
 
-  return NextResponse.json(responseBlogs);
+  return NextResponse.json(responseBlogs, {
+    // headers: {
+    //   'Cache-Control': 'public, max-age=86400, stale-while-revalidate=604800',
+    //   'Netlify-CDN-Cache-Control': 'public, max-age=86400, stale-while-revalidate=604800, durable',
+    // }, // Cache is temporarily unavailable as further testing is needed.
+  });
 }
 
 // @export
-export const dynamic = 'force-static';
+export const dynamic = 'force-dynamic';

@@ -15,3 +15,27 @@ export type Blog = {
 export type BlogList = {
   data: Blog[];
 };
+
+export const BLOG_SORT_FIELDS = [
+  'id',
+  'createdAt',
+  'title',
+  'preview',
+  'emojis',
+  'view',
+  'userName',
+  'fullname',
+  'categoryName',
+  'slugName',
+] as const satisfies readonly (keyof Omit<Blog, 'content'>)[];
+
+export type BlogSortField = (typeof BLOG_SORT_FIELDS)[number];
+
+export type BlogsSearchParams = {
+  pageNumber: number;
+  pageSize: number;
+  sortField?: BlogSortField;
+  sortOrder?: 'asc' | 'desc';
+  title?: string | null;
+  category?: string | null;
+};

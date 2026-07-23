@@ -43,4 +43,4 @@ export function generateStaticParams() {
 export const dynamic = 'force-static';
 
 // @export
-export const dynamicParams = false;
+export const dynamicParams = true;
