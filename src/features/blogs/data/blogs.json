@@ -237,6 +237,20 @@
       "fullname": "FTES ADMIN",
       "categoryName": "Thông báo",
       "slugName": "khai-xuan-chien-cot---funnycode--code-het-minh-thuong-het-co"
+    },
+    {
+      "id": "6181d80b-0e50-45ef-b27e-f0d84d891641",
+      "createdAt": "2024-12-12T16:15:48.507+00:00",
+      "title": "Vinh Danh Học Viên Xuất Sắc kì FA24",
+      "preview": "[HỌC BÁ KÌ FA24 GỌI TÊN ANH CHÀNG FUDA - Nguyễn Đăng Kim Khoa] - Là Học viên FunnyCode lớp CSD201 - DBI202 - WED201c. Với thành tích: - Điểm PE CSD201 kì FA24: 9 - Điểm PE DBI202 kì FA24: 10 - Điểm PE WED201c kì FA24: 10 - Với tổng Average kì Spring25 đạt ngưỡng 9.35 trong 5 môn học CSD201, JPD113, WED201c, LAB211 và JPD113 - Nguyễn Đăng Kim Khoa Xuất Sắc là Học Bá kì FA24 của FunnyCode.",
+      "content": "<p><strong>[HỌC BÁ KÌ FA24 GỌI TÊN ANH CHÀNG FUDA - </strong><a href=\"https://www.facebook.com/khoadevInJapan\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>Nguyễn Đăng Kim Khoa</strong></a><strong>]</strong></p><p>- Là Học viên FunnyCode lớp CSD201 - DBI202 - WED201c</p><p>Với thành tích:</p><p>- Điểm PE CSD201 kì FA24: <strong>9</strong></p><p>- Điểm PE DBI202 kì FA24: <strong>10</strong></p><p>- Điểm PE WED201c kì FA24: <strong>10</strong></p><p>- Với tổng Average kì Spring25 đạt ngưỡng 9.35 trong 5 môn học CSD201, JPD113, WED201c, LAB211 và JPD113 - Nguyễn Đăng Kim Khoa Xuất Sắc là Học Bá kì FA24 của FunnyCode.</p><p>Với danh hiệu này ở FunnyCode, Khoa sẽ:</p><p>- Nhận được Voucher <strong>FREE HỌC PHÍ TẤT CẢ CÁC MÔN KÌ SP24</strong></p><p>- Nhận được <strong>Bàn Phím Keyboard F7 trị giá 1.200.000đ</strong></p><p>- Trở thành gương mặt đại diện trên hệ thống Website đang phát triển của FunnyCode cùng với chiến dịch quáng bá hình ảnh FunnyCode trong tương lai</p><p>Món quà <strong>NHỎ</strong> nhưng tấm lòng to, hi vọng Nguyễn Đăng Kim Khoa sẽ tiếp tục gặt hái thêm nhiều thành tích tốt trong tương lai để thành công hơn, phát triển hơn. Go Goo Gooooooooo!!!</p><p><img src=\"https://cdn.jsdelivr.net/gh/ftesedu/funnycode-images-1755118228915@main/images/472077922_122111128628658206_3602873898906483192_n.jpg_1755119490118.jpg\" alt=\"Kim Khoa\"></p>",
+      "image": "https://cdn.jsdelivr.net/gh/ftesedu/funnycode-images-1755118228915@main/images/472077922_122111128628658206_3602873898906483192_n.jpg_1755119490118.jpg",
+      "emojis": 0,
+      "view": true,
+      "userName": "admin-system@funnycode.vn",
+      "fullname": "FTES ADMIN",
+      "categoryName": "Vinh danh",
+      "slugName": "vinh-danh-hoc-vien-xuat-sac-ki-fa24"
     }
   ]
 }
