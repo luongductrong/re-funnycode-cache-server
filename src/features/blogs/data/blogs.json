@@ -139,6 +139,20 @@
       "fullname": "FTES ADMIN",
       "categoryName": "Chia sẻ",
       "slugName": "front-end-la-gi-huong-tiep-can-cho-nguoi-moi-bat-dau"
+    },
+    {
+      "id": "711f4ed4-85cb-4919-a659-d0b3cf170ea4",
+      "createdAt": "2025-03-28T20:17:07.788+00:00",
+      "title": "Giới thiệu về Vue.js",
+      "preview": "Vue.js là một framework JavaScript mạnh mẽ dùng để xây dựng giao diện người dùng và ứng dụng web đơn trang (SPA). Được tạo bởi Evan You, Vue.js tập trung vào sự linh hoạt, hiệu suất cao và dễ dàng tích hợp vào các dự án hiện có. Tại sao nên sử dụng Vue.js? Cài đặt Vue.js. Cấu trúc dự án Vue.js. Tạo Component đơn giản trong Vue.js.",
+      "content": "<h2>Giới thiệu về Vue.js</h2><p>Vue.js là một framework JavaScript mạnh mẽ dùng để xây dựng giao diện người dùng và ứng dụng web đơn trang (SPA). Được tạo bởi Evan You, Vue.js tập trung vào sự linh hoạt, hiệu suất cao và dễ dàng tích hợp vào các dự án hiện có.</p><h2>Tại sao nên sử dụng Vue.js?</h2><ol><li><strong>Reactive Data Binding</strong>: Vue sử dụng hệ thống reactivity giúp cập nhật giao diện tự động khi dữ liệu thay đổi.</li><li><strong>Component-Based</strong>: Xây dựng giao diện bằng các component có thể tái sử dụng.</li><li><strong>Virtual DOM</strong>: Cải thiện hiệu suất bằng cách chỉ cập nhật phần cần thay đổi trên giao diện.</li><li><strong>Dễ học và linh hoạt</strong>: Cấu trúc đơn giản, có thể dễ dàng tích hợp vào các dự án khác.</li></ol><h2>Cài đặt Vue.js</h2><p>Bạn có thể cài đặt Vue.js bằng cách sử dụng Vite để tối ưu hóa hiệu suất:</p><pre class=\"ql-syntax\" spellcheck=\"false\">npm create vite@latest my-app --template vue\ncd my-app\nnpm install\nnpm run dev\n</pre><h2>Cấu trúc dự án Vue.js</h2><p>Một dự án Vue.js thường có cấu trúc thư mục như sau:</p><pre class=\"ql-syntax\" spellcheck=\"false\">my-app/\n├── src/\n│   ├── components/   # Chứa các component\n│   ├── pages/        # Chứa các trang\n│   ├── assets/       # Chứa các tệp tĩnh như hình ảnh, CSS\n│   ├── App.vue       # Component chính của ứng dụng\n│   ├── main.js       # Điểm bắt đầu của ứng dụng\n├── public/           # Chứa các tệp tĩnh không qua xử lý\n├── package.json      # File cấu hình dự án\n</pre><h2>Tạo Component đơn giản trong Vue.js</h2><p>Ví dụ, tạo một component Button.vue đơn giản:</p><pre class=\"ql-syntax\" spellcheck=\"false\">&lt;template&gt;\n  &lt;button @click=\"handleClick\" class=\"btn\"&gt;{{ text }}&lt;/button&gt;\n&lt;/template&gt;\n\n&lt;script&gt;\nexport default {\n  props: ['text'],\n  methods: {\n    handleClick() {\n      alert('Hello, Vue!');\n    }\n  }\n};\n&lt;/script&gt;\n</pre><p>Sau đó, sử dụng component này trong App.vue:</p><pre class=\"ql-syntax\" spellcheck=\"false\">&lt;template&gt;\n  &lt;div&gt;\n    &lt;h1&gt;Welcome to Vue&lt;/h1&gt;\n    &lt;Button text=\"Click me\" /&gt;\n  &lt;/div&gt;\n&lt;/template&gt;\n\n&lt;script&gt;\nimport Button from \"./components/Button.vue\";\n\nexport default {\n  components: { Button }\n};\n&lt;/script&gt;\n</pre><h2>Kết luận</h2><p>Vue.js là một framework mạnh mẽ giúp xây dựng ứng dụng web một cách nhanh chóng và hiệu quả. Với sự hỗ trợ của Vite, bạn có thể dễ dàng khởi tạo và phát triển dự án Vue.js một cách tối ưu.</p><p><br></p><p><img src=\"https://cdn.jsdelivr.net/gh/ftesedu/funnycode-images-1772769317150@main/images/d8085ddf-51f0-4dc7-bf47-5171b2305845_1784815568464.jpg\"></p>",
+      "image": "https://cdn.jsdelivr.net/gh/ftesedu/funnycode-images-1772769317150@main/images/d8085ddf-51f0-4dc7-bf47-5171b2305845_1784815568464.jpg",
+      "emojis": 0,
+      "view": true,
+      "userName": "admin-system@funnycode.vn",
+      "fullname": "FTES ADMIN",
+      "categoryName": "Chia sẻ",
+      "slugName": "gioi-thieu-ve-vue-js"
     }
   ]
 }
