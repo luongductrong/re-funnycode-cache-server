@@ -44,8 +44,12 @@ export async function GET(request: NextRequest, { params }: BlogRouteContext) {
     },
     result: blog,
   };
-  return NextResponse.json(responseBlog);
-  // TODO
+  return NextResponse.json(responseBlog, {
+    headers: {
+      'Cache-Control': 'public, max-age=604800, stale-while-revalidate=604800',
+      'Netlify-CDN-Cache-Control': 'public, max-age=604800, stale-while-revalidate=604800, durable',
+    }, // 7 days fresh + 7 days stale
+  });
 }
 
 // @export

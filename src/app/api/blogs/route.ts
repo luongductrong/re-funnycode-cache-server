@@ -28,10 +28,10 @@ export function GET(request: NextRequest) {
   };
 
   return NextResponse.json(responseBlogs, {
-    // headers: {
-    //   'Cache-Control': 'public, max-age=86400, stale-while-revalidate=604800',
-    //   'Netlify-CDN-Cache-Control': 'public, max-age=86400, stale-while-revalidate=604800, durable',
-    // }, // Cache is temporarily unavailable as further testing is needed.
+    headers: {
+      'Cache-Control': 'public, max-age=86400, stale-while-revalidate=604800',
+      'Netlify-CDN-Cache-Control': 'public, max-age=86400, stale-while-revalidate=604800, durable',
+    }, // 1 day fresh + 7 days stale
   });
 }
 
