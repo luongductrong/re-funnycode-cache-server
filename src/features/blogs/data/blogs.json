@@ -195,6 +195,20 @@
       "fullname": "FTES ADMIN",
       "categoryName": "Chia sẻ",
       "slugName": "giai-thuat-1-sang-so-nguyen-to"
+    },
+    {
+      "id": "44f13b27-96dc-40ea-91e6-af88d9039616",
+      "createdAt": "2025-03-25T15:09:40.415+00:00",
+      "title": "Thông báo quan trọng về hệ thống Website",
+      "preview": "Hệ thống mới hoạt động nên sẽ không tránh khỏi các lỗi trong quá trình vận hành. Mọi thông tin liên quan đến bug/lỗi sự kiện... vui lòng nhắn trực tiếp qua page: FunnyCode để tụi mình hổ trợ nhanh nhất có thể! Các khoá học hiện tại được đăng tải trên Website chỉ bao gồm mỗi Record. Bọn mình đang gấp rút tiến hành phát triển tính năng lưu tài liệu cho học viên và sẽ sớm có trong vài hôm nữa. Xin lỗi vì sự bất tiện này.",
+      "content": "<p><strong>[THÔNG BÁO QUAN TRỌNG VỀ HỆ THỐNG WEBSITE FUNNYCODE]</strong></p><p><br></p><p>Hệ thống mới hoạt động nên sẽ không tránh khỏi các lỗi trong quá trình vận hành. Mọi thông tin liên quan đến bug/lỗi sự kiện... vui lòng nhắn trực tiếp qua page: <a href=\"https://www.facebook.com/gogo.funnycode\" rel=\"noopenernoreferrer\" target=\"_blank\">FunnyCode</a> để tụi mình hổ trợ nhanh nhất có thể!</p><p>Các khoá học hiện tại được đăng tải trên Website chỉ bao gồm mỗi Record. Bọn mình đang gấp rút tiến hành phát triển tính năng lưu tài liệu cho học viên và sẽ sớm có trong vài hôm nữa. Xin lỗi vì sự bất tiện này.</p><p>Hệ thống đang phát triển - responsive cho web để có thể hoạt động tốt ở Mobile và cập nhật thêm 1 số tính năng quan trọng khác. Cùng chờ đón nhé!</p><p><em>Chúc các bạn trải nghiệm tốt!!!</em></p><p><em>FunnyCode</em></p><p><br></p><p><img src=\"https://cdn.jsdelivr.net/gh/ftesedu/funnycode-images-1772769317150@main/images/3022e4aa-38ba-46e2-bcd9-65c5ce57ddff_1784821267451.jpg\" alt=\"FunnyCode\"></p>",
+      "image": "https://cdn.jsdelivr.net/gh/ftesedu/funnycode-images-1772769317150@main/images/3022e4aa-38ba-46e2-bcd9-65c5ce57ddff_1784821267451.jpg",
+      "emojis": 0,
+      "view": true,
+      "userName": "admin-system@funnycode.vn",
+      "fullname": "FTES ADMIN",
+      "categoryName": "Thông báo",
+      "slugName": "thong-bao-quan-trong-ve-he-thong-website"
     }
   ]
 }
